@@ -1,0 +1,14 @@
+# composer vendor dir
+/vendor/
+
+# phpstorm project files
+/.idea/
+
+# composer itself is not needed
+composer.phar
+
+composer.lock
+
+.directory
+/dirlist.*
+/documents/

@@ -1,0 +1,30 @@
+{
+  "name": "lembdev/omnipay-stripe",
+  "description": "Extended Stripe driver for the Omnipay payment processing library",
+  "keywords": [
+    "gateway",
+    "merchant",
+    "stripe",
+    "pay",
+    "payment"
+  ],
+  "type": "library",
+  "homepage": "https://github.com/lembdev/omnipay-stripe",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "lembdev",
+      "email": "lembdev@gmail.com"
+    }
+  ],
+  "require": {
+    "php" : ">=5.5.0",
+    "omnipay/stripe": "~2.4.7"
+  },
+  "require-dev": {
+    "omnipay/tests": "~2.1.0"
+  },
+  "autoload": {
+    "psr-4": { "lembdev\\Stripe\\" : "src/" }
+  }
+}
