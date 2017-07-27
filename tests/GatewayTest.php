@@ -29,13 +29,13 @@ class GatewayTest extends GatewayTestCase
     public function testFetchAccount()
     {
         $request = $this->gateway->fetchAccount();
-        $this->assertInstanceOf(Message\CreateAccountRequest::class, $request);
+        $this->assertInstanceOf(Message\FetchAccountRequest::class, $request);
     }
 
     public function testUpdateAccount()
     {
         $request = $this->gateway->updateAccount();
-        $this->assertInstanceOf(Message\CreateAccountRequest::class, $request);
+        $this->assertInstanceOf(Message\UpdateAccountRequest::class, $request);
     }
 
     public function testDeleteAccount()

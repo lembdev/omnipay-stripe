@@ -6,7 +6,7 @@
 
 namespace lembdev\Stripe\Message;
 
-class DeleteAccountRequest extends AbstractRequest
+class UpdateAccountRequest extends AbstractRequest
 {
     /**
      * @inheritdoc
@@ -15,15 +15,7 @@ class DeleteAccountRequest extends AbstractRequest
     {
         $this->validate('accountReference');
 
-        return;
-    }
-
-    /**
-     * @inheritdoc
-     */
-    public function getHttpMethod()
-    {
-        return 'DELETE';
+        return $this->parameters->all();
     }
 
     /**

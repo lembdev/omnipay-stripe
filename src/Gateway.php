@@ -29,7 +29,7 @@ class Gateway extends \Omnipay\Stripe\Gateway
      */
     public function fetchAccount(array $parameters = array())
     {
-        return $this->createRequest(Message\CreateAccountRequest::class, $parameters);
+        return $this->createRequest(Message\FetchAccountRequest::class, $parameters);
     }
 
     /**
@@ -41,7 +41,7 @@ class Gateway extends \Omnipay\Stripe\Gateway
      */
     public function updateAccount(array $parameters = array())
     {
-        return $this->createRequest(Message\CreateAccountRequest::class, $parameters);
+        return $this->createRequest(Message\UpdateAccountRequest::class, $parameters);
     }
 
     /**

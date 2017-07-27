@@ -29,4 +29,24 @@ abstract class AbstractRequest extends \Omnipay\Stripe\Message\AbstractRequest
 
         return $this->response;
     }
+
+    /**
+     * Get the account reference.
+     *
+     * @return string
+     */
+    public function getAccountReference()
+    {
+        return $this->getParameter('accountReference');
+    }
+
+    /**
+     * Set the account reference.
+     *
+     * @return self
+     */
+    public function setAccountReference($value)
+    {
+        return $this->setParameter('accountReference', $value);
+    }
 }

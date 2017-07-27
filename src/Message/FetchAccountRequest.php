@@ -6,7 +6,7 @@
 
 namespace lembdev\Stripe\Message;
 
-class DeleteAccountRequest extends AbstractRequest
+class FetchAccountRequest extends AbstractRequest
 {
     /**
      * @inheritdoc
@@ -23,7 +23,7 @@ class DeleteAccountRequest extends AbstractRequest
      */
     public function getHttpMethod()
     {
-        return 'DELETE';
+        return 'GET';
     }
 
     /**
