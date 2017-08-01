@@ -1,5 +1,5 @@
 {
-  "name": "SammDev1/omnipay-stripe",
+  "name": "lembdev/omnipay-stripe",
   "description": "Extended Stripe driver for the Omnipay payment processing library",
   "keywords": [
     "gateway",
@@ -9,12 +9,12 @@
     "payment"
   ],
   "type": "library",
-  "homepage": "https://github.com/SammDev1/omnipay-stripe",
+  "homepage": "https://github.com/lembdev/omnipay-stripe",
   "license": "MIT",
   "authors": [
     {
-      "name": "SammDev1",
-      "email": "rodrigo@samm.ie"
+      "name": "lembdev",
+      "email": "lembdev@gmail.com"
     }
   ],
   "require": {
@@ -25,6 +25,6 @@
     "omnipay/tests": "~2.1.0"
   },
   "autoload": {
-    "psr-4": { "SammDev1\\Stripe\\" : "src/" }
+    "psr-4": { "lembdev\\Stripe\\" : "src/" }
   }
 }
