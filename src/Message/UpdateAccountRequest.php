@@ -9,7 +9,7 @@ namespace lembdev\Stripe\Message;
 class UpdateAccountRequest extends AbstractRequest
 {
     /**
-     * Get the account's type.     *
+     * Get the account's type.
      * @return string
      */
     public function getType()
@@ -18,8 +18,8 @@ class UpdateAccountRequest extends AbstractRequest
     }
 
     /**
-     * Sets the account's type.     *
-     * @param string $value     *
+     * Sets the account's type.
+     * @param string $value
      * @return UpdateAccountRequest provides a fluent interface.
      */
     public function setType($value)
@@ -28,7 +28,7 @@ class UpdateAccountRequest extends AbstractRequest
     }
 
     /**
-     * Get the account's email.     *
+     * Get the account's email.
      * @return string
      */
     public function getEmail()
@@ -37,8 +37,8 @@ class UpdateAccountRequest extends AbstractRequest
     }
 
     /**
-     * Sets the account's email.     *
-     * @param string $value     *
+     * Sets the account's email.
+     * @param string $value
      * @return UpdateAccountRequest provides a fluent interface.
      */
     public function setEmail($value)
@@ -47,26 +47,7 @@ class UpdateAccountRequest extends AbstractRequest
     }
 
     /**
-     * Get the account's metadata.     *
-     * @return string
-     */
-    public function getMetadata()
-    {
-        return $this->getParameter('metadata');
-    }
-
-    /**
-     * Sets the account's metadata.     *
-     * @param string $value     *
-     * @return UpdateAccountRequest provides a fluent interface.
-     */
-    public function setMetadata($value)
-    {
-        return $this->setParameter('metadata', $value);
-    }
-
-    /**
-     * Get the account's legal_entity.     *
+     * Get the account's legal_entity.
      * @return string
      */
     public function getLegalEntity()
@@ -75,7 +56,7 @@ class UpdateAccountRequest extends AbstractRequest
     }
 
     /**
-     * Sets the account's legal_entity.     *
+     * Sets the account's legal_entity.
      * @param string $value     *
      * @return UpdateAccountRequest provides a fluent interface.
      */
@@ -85,7 +66,7 @@ class UpdateAccountRequest extends AbstractRequest
     }
 
     /**
-     * Get the account's business_name.     *
+     * Get the account's business_name.
      * @return string
      */
     public function getBusinessName()
@@ -94,8 +75,8 @@ class UpdateAccountRequest extends AbstractRequest
     }
 
     /**
-     * Sets the account's business_name.     *
-     * @param string $value     *
+     * Sets the account's business_name.
+     * @param string $value
      * @return UpdateAccountRequest provides a fluent interface.
      */
     public function setBusinessName($value)
@@ -104,7 +85,7 @@ class UpdateAccountRequest extends AbstractRequest
     }
 
     /**
-     * Get the account's business_url.     *
+     * Get the account's business_url.
      * @return string
      */
     public function getBusinessUrl()
@@ -113,8 +94,8 @@ class UpdateAccountRequest extends AbstractRequest
     }
 
     /**
-     * Sets the account's business_url.     *
-     * @param string $value     *
+     * Sets the account's business_url.
+     * @param string $value
      * @return UpdateAccountRequest provides a fluent interface.
      */
     public function setBusinessUrl($value)
@@ -123,7 +104,7 @@ class UpdateAccountRequest extends AbstractRequest
     }
 
     /**
-     * Get the account's external_account.     *
+     * Get the account's external_account.
      * @return string
      */
     public function getExternalAccount()
@@ -132,8 +113,8 @@ class UpdateAccountRequest extends AbstractRequest
     }
 
     /**
-     * Sets the account's external_account.     *
-     * @param string $value     *
+     * Sets the account's external_account.
+     * @param string $value
      * @return UpdateAccountRequest provides a fluent interface.
      */
     public function setExternalAccount($value)
@@ -142,7 +123,7 @@ class UpdateAccountRequest extends AbstractRequest
     }
 
     /**
-     * Get the account's payout_schedule.     *
+     * Get the account's payout_schedule.
      * @return string
      */
     public function getPayoutSchedule()
@@ -151,8 +132,8 @@ class UpdateAccountRequest extends AbstractRequest
     }
 
     /**
-     * Sets the account's payout_schedule.     *
-     * @param string $value     *
+     * Sets the account's payout_schedule.
+     * @param string $value
      * @return UpdateAccountRequest provides a fluent interface.
      */
     public function setPayoutSchedule($value)
@@ -161,7 +142,7 @@ class UpdateAccountRequest extends AbstractRequest
     }
 
     /**
-     * Get the account's tos_acceptance.     *
+     * Get the account's tos_acceptance.
      * @return string
      */
     public function getTosAcceptance()
@@ -170,8 +151,8 @@ class UpdateAccountRequest extends AbstractRequest
     }
 
     /**
-     * Sets the account's tos_acceptance.     *
-     * @param string $value     *
+     * Sets the account's tos_acceptance.
+     * @param string $value
      * @return UpdateAccountRequest provides a fluent interface.
      */
     public function setTosAcceptance($value)
@@ -188,7 +169,6 @@ class UpdateAccountRequest extends AbstractRequest
 
         $data = [];
 
-        //$data['type'] = $this->getType();
         $data['email'] = $this->getEmail();
         $data['metadata'] = $this->getMetadata();
         $data['legal_entity'] = $this->getLegalEntity();
