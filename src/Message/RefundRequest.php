@@ -73,10 +73,12 @@ class RefundRequest extends \Omnipay\Stripe\Message\RefundRequest
     {
         $this->validate('transactionReference');
 
-        $data = [];
+        $data = [
+            'charge' => $this->getTransactionReference(),
+        ];
 
         if ($this->getAmount()) {
-            $data['reason'] = $this->getAmountInteger();
+            $data['amount'] = $this->getAmountInteger();
         }
 
         if ($this->getMetadata()) {
