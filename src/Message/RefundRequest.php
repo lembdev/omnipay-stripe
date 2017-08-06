@@ -11,6 +11,20 @@ use Omnipay\Common\Exception\InvalidRequestException;
 class RefundRequest extends \Omnipay\Stripe\Message\RefundRequest
 {
     /**
+     * @inheritdoc
+     */
+    public function setAmount($value)
+    {
+        $value = (string)$value;
+
+        if (strpos($value, '.') === false) {
+            $value .= '.00';
+        }
+
+        return parent::setAmount($value);
+    }
+
+    /**
      * String indicating the reason for the refund.
      * If set, possible values are duplicate, fraudulent, and requested_by_customer.
      * Specifying fraudulent as the reason when you believe the charge
